@@ -20,7 +20,6 @@ https://hub.docker.com/r/jxxghp/moviepilot-v2/</Overview>
   <Icon>https://wiki.movie-pilot.org/assets/logo.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset>5,6,7</CPUset>
   <DateInstalled>1736605305</DateInstalled>
   <DonateText/>
   <DonateLink/>
