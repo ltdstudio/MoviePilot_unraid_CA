@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>moviepilot-v2</Name>
+  <Repository>jxxghp/moviepilot-v2</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/moviepilot-v2/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jxxghp/moviepilot-v2/</Support>
+  <Project>https://github.com/jxxghp/MoviePilot</Project>
+  <Overview>https://github.com/jxxghp/MoviePilot&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/jxxghp/moviepilot-v2/</Overview>
+  <Category>MediaServer:Video MediaServer:Music Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://wiki.movie-pilot.org/assets/logo.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>5,6,7</CPUset>
+  <DateInstalled>1736605305</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Path 1" Target="/config" Default="/mnt/user/appdata/moviepilot-v2" Mode="rw" Description="Mp V2 dir" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot-v2/config</Config>
+  <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Container Variable 1" Target="LANG" Default="C.UTF-8" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">C.UTF-8</Config>
+  <Config Name="Container Variable 2" Target="GPG_KEY" Default="A035C8C19219BA821ECEA86B64E628F8D684696D" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">A035C8C19219BA821ECEA86B64E628F8D684696D</Config>
+  <Config Name="Container Variable 3" Target="PYTHON_VERSION" Default="3.11.4" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3.11.4</Config>
+  <Config Name="Container Variable 4" Target="PYTHON_PIP_VERSION" Default="23.1.2" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">23.1.2</Config>
+  <Config Name="Container Variable 5" Target="PYTHON_SETUPTOOLS_VERSION" Default="65.5.1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">65.5.1</Config>
+  <Config Name="Container Variable 6" Target="PYTHON_GET_PIP_URL" Default="https://github.com/pypa/get-pip/raw/9af82b715db434abb94a0a6f3569f43e72157346/public/get-pip.py" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/pypa/get-pip/raw/9af82b715db434abb94a0a6f3569f43e72157346/public/get-pip.py</Config>
+  <Config Name="Container Variable 7" Target="PYTHON_GET_PIP_SHA256" Default="45a2bb8bf2bb5eff16fdd00faef6f29731831c7c59bd9fc2bf1f3bed511ff1fe" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">45a2bb8bf2bb5eff16fdd00faef6f29731831c7c59bd9fc2bf1f3bed511ff1fe</Config>
+  <Config Name="Container Variable 8" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
+  <Config Name="Container Variable 9" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>
+  <Config Name="Container Variable 10" Target="TERM" Default="xterm" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">xterm</Config>
+  <Config Name="Container Variable 11" Target="DISPLAY" Default=":987" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">:987</Config>
+  <Config Name="Container Variable 12" Target="PUID" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Container Variable 13" Target="PGID" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Container Variable 14" Target="UMASK" Default="000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="Container Variable 15" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="Container Variable 16" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Container Variable 17" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="ms-playwright" Target="/moviepilot/.cache/ms-playwright" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot-v2-1/core</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="" Description="eg: http://user:password@ipaddress:prot" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="media" Target="/media" Default="" Mode="rw" Description="Your Media dir&#13;&#10;like:&#13;&#10;/mnt/user/media/" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="pt" Target="/pt" Default="" Mode="rw" Description="PT download dir&#13;&#10;like&#13;&#10;/mnt/user/pt/" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="pt_temp" Target="/pt_temp" Default="" Mode="rw" Description="for PT &#13;&#10;like&#13;&#10;/mnt/user/pt_temp/" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <TailscaleStateDir/>
+</Container>
