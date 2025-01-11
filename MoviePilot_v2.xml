@@ -9,7 +9,22 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/jxxghp/moviepilot-v2/</Support>
   <Project>https://github.com/jxxghp/MoviePilot</Project>
-  <Overview>https://github.com/jxxghp/MoviePilot&#xD;
+  <Overview>===================================================================================&#xD;
+MoviePilot is a powerful home video and audio download aggregation center designed for media enthusiasts. It provides an all-in-one solution to manage and download your favorite media content. Key features include:&#xD;
+&#xD;
+Automated Subscription &amp;amp; Download: Supports setting up subscription sources and automatically invokes BT software to download media content, eliminating manual effort.&#xD;
+Smart Metadata Scraping: Automatically scrapes metadata such as cover images, descriptions, cast information, and more to enrich your media library.&#xD;
+Media Archiving &amp;amp; Organization: Generates NFO files with the scraped metadata, making it easy to categorize and archive media files, helping you build a professional home media library effortlessly.&#xD;
+Whether it's movies, TV shows, or audio files, MoviePilot efficiently and intelligently helps you create a well-organized home media center.&#xD;
+====================================================================================&#xD;
+MoviePilot &#x662F;&#x4E00;&#x6B3E;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x7684;&#x5BB6;&#x5EAD;&#x89C6;&#x9891;&#x97F3;&#x9891;&#x4E0B;&#x8F7D;&#x805A;&#x5408;&#x4E2D;&#x5FC3;&#xFF0C;&#x4E13;&#x4E3A;&#x5F71;&#x97F3;&#x7231;&#x597D;&#x8005;&#x6253;&#x9020;&#x3002;&#x5B83;&#x80FD;&#x591F;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x8F7B;&#x677E;&#x7BA1;&#x7406;&#x548C;&#x4E0B;&#x8F7D;&#x6240;&#x9700;&#x7684;&#x5A92;&#x4F53;&#x5185;&#x5BB9;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x7AD9;&#x5F0F;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x5305;&#x62EC;&#xFF1A;&#xD;
+&#xD;
+&#x81EA;&#x52A8;&#x8BA2;&#x9605;&#x4E0E;&#x4E0B;&#x8F7D;&#xFF1A;&#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x8BA2;&#x9605;&#x6E90;&#xFF0C;&#x81EA;&#x52A8;&#x8C03;&#x7528; BT &#x8F6F;&#x4EF6;&#x8FDB;&#x884C;&#x5A92;&#x4F53;&#x5185;&#x5BB9;&#x4E0B;&#x8F7D;&#xFF0C;&#x65E0;&#x9700;&#x624B;&#x52A8;&#x64CD;&#x4F5C;&#x3002;&#xD;
+&#x667A;&#x80FD;&#x522E;&#x524A;&#x5143;&#x6570;&#x636E;&#xFF1A;&#x81EA;&#x52A8;&#x522E;&#x524A;&#x5A92;&#x4F53;&#x7684;&#x5C01;&#x9762;&#x56FE;&#x7247;&#x3001;&#x7B80;&#x4ECB;&#x3001;&#x6F14;&#x5458;&#x4FE1;&#x606F;&#x7B49;&#x8BE6;&#x7EC6;&#x8D44;&#x6599;&#xFF0C;&#x4E3A;&#x60A8;&#x7684;&#x5A92;&#x4F53;&#x5E93;&#x589E;&#x6DFB;&#x4E30;&#x5BCC;&#x7684;&#x5185;&#x5BB9;&#x3002;&#xD;
+&#x5A92;&#x4F53;&#x5F52;&#x6863;&#x4E0E;&#x6574;&#x7406;&#xFF1A;&#x5C06;&#x522E;&#x524A;&#x7684;&#x5143;&#x6570;&#x636E;&#x751F;&#x6210; NFO &#x6587;&#x4EF6;&#xFF0C;&#x65B9;&#x4FBF;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7684;&#x5206;&#x7C7B;&#x4E0E;&#x5F52;&#x6863;&#xFF0C;&#x8F7B;&#x677E;&#x6253;&#x9020;&#x4E13;&#x4E1A;&#x7684;&#x5BB6;&#x5EAD;&#x5F71;&#x97F3;&#x5E93;&#x3002;&#xD;
+&#x65E0;&#x8BBA;&#x662F;&#x7535;&#x5F71;&#x3001;&#x7535;&#x89C6;&#x5267;&#x8FD8;&#x662F;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#xFF0C;MoviePilot &#x90FD;&#x80FD;&#x4EE5;&#x9AD8;&#x6548;&#x3001;&#x667A;&#x80FD;&#x7684;&#x65B9;&#x5F0F;&#x5E2E;&#x52A9;&#x60A8;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x4E95;&#x7136;&#x6709;&#x5E8F;&#x7684;&#x5BB6;&#x5EAD;&#x5A92;&#x4F53;&#x4E2D;&#x5FC3;&#x3002;&#xD;
+&#xD;
+https://github.com/jxxghp/MoviePilot&#xD;
 &#xD;
 Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
 &#xD;
