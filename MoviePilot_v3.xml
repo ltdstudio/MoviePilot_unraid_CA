@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MoviePilot-V3</Name>
+  <Repository>jxxghp/moviepilot-v3</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/moviepilot-v3</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/184591-support-moviepilot-v3/</Support>
+  <Project>https://github.com/jxxghp/MoviePilot</Project>
+  <Overview>MoviePilot V3 is an automation hub for a home media library. It watches your subscriptions, searches your indexers, hands the release to your existing BitTorrent client, then renames, hardlinks and scrapes the finished files into a clean library and refreshes your media server.[br][br]
+  Highlights:[br]
+  - Subscribe to movies and TV shows and let MoviePilot find and download them automatically.[br]
+  - Works with your existing downloaders, media servers, metadata sources and notification channels.[br]
+  - Automatic organising: renaming, hardlinking, NFO/artwork scraping and media server refresh.[br]
+  - Plugin and workflow system for extending behaviour without touching the core.[br][br]
+  Setup notes:[br]
+  - The web UI runs on port 3000. On first start open it and complete the setup wizard.[br]
+  - Map /media and /downloads under the same Unraid share (for example /mnt/user/) so hardlinks work instead of copies.[br]
+  - Settings live in /config/app.env and can also be edited from the web UI.[br][br]
+  Documentation: https://wiki.movie-pilot.org[br]
+  Project home: https://movie-pilot.org[br][br]
+  This template is community maintained and is not produced by the MoviePilot authors. Support requests for the template belong in the Unraid support thread; bugs in MoviePilot itself belong upstream.[br][br]
+  ===== 简体中文 =====[br]
+  MoviePilot V3 是一款面向家庭影音库的自动化管理工具：自动订阅、搜索资源、调用已有的 BT 下载器下载，下载完成后自动重命名、硬链接、刮削元数据并通知媒体服务器刷新。[br][br]
+  使用提示：[br]
+  - Web 界面端口为 3000，首次启动后打开页面完成初始化向导。[br]
+  - /media 与 /downloads 请映射到同一个 Unraid 共享（例如 /mnt/user/）下，否则无法硬链接，只能复制。[br]
+  - 配置保存在 /config/app.env，也可以在 Web 界面中修改。[br][br]
+  本模板由社区维护，非 MoviePilot 官方出品。模板相关问题请在 Unraid 支持贴反馈，程序本身的问题请到上游仓库反馈。</Overview>
+  <Category>MediaApp:Video Downloaders: Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ltdstudio/MoviePilot_unraid_CA/main/MoviePilot_v3.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ltdstudio/MoviePilot_unraid_CA/main/moviepilot.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Changes>
+### 3.0.0
+Initial Community Applications template for MoviePilot V3. V3 ships as its own image (jxxghp/moviepilot-v3); V2 stays on jxxghp/moviepilot-v2 and is not upgraded in place by this template.
+  </Changes>
+  <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the MoviePilot web interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/moviepilot-v3" Mode="rw" Description="Configuration, database and cache. Keep this on the cache/appdata share." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moviepilot-v3</Config>
+  <Config Name="Media Library" Target="/media" Default="" Mode="rw" Description="Your media library, e.g. /mnt/user/media/. Must be on the same share as the download folder if you want hardlinks." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="The download folder used by your BitTorrent client, e.g. /mnt/user/downloads/. Must be on the same share as the media library if you want hardlinks." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID the application runs as. 99 is the standard Unraid nobody user." Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID the application runs as. 100 is the standard Unraid users group." Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="File mode creation mask used for files written by the application." Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
+  <Config Name="TZ" Target="TZ" Default="Asia/Shanghai" Mode="" Description="Container timezone, e.g. Asia/Shanghai, Europe/Berlin, America/New_York." Type="Variable" Display="always" Required="true" Mask="false">Asia/Shanghai</Config>
+  <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="" Description="Port the built-in web server listens on inside the container. Change this only together with the WebUI Port mapping above." Type="Variable" Display="advanced" Required="false" Mask="false">3000</Config>
+  <Config Name="PORT" Target="PORT" Default="3001" Mode="" Description="Internal API port. Only change this if it clashes with something else inside the container." Type="Variable" Display="advanced" Required="false" Mask="false">3001</Config>
+  <Config Name="MOVIEPILOT_AUTO_UPDATE" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="" Description="Update the application on container start: release, dev, or false to disable." Type="Variable" Display="advanced" Required="false" Mask="false">release</Config>
+  <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="" Description="Optional HTTP proxy used for outbound requests, e.g. http://user:password@192.168.1.2:7890" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="GITHUB_PROXY" Target="GITHUB_PROXY" Default="" Mode="" Description="Optional GitHub mirror prefix used when downloading updates and plugins, e.g. https://ghproxy.net/" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="GITHUB_TOKEN" Target="GITHUB_TOKEN" Default="" Mode="" Description="Optional GitHub personal access token used to raise the API rate limit for updates and plugin downloads." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="MOVIEPILOT_FORCE_CHOWN" Target="MOVIEPILOT_FORCE_CHOWN" Default="false" Mode="" Description="Set to true for one start if the application reports permission errors on its cache directories. Slows down startup." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Optional. Only needed by plugins that restart containers. Leave empty unless you use one of them." Type="Path" Display="advanced" Required="false" Mask="false"/>
+</Container>
